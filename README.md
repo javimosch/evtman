@@ -1,17 +1,15 @@
-# tinyevt
-Convert any object in a tiny (868bytes) custom event manager.
+# evtman
+tinyevt con asteroides. Implements tinyevt library and add support for dom events.
 
 ## Usage
 
 ``` jss
-    var tinyevt = require('tinyevt');
+    var evt = require('evtman');
     
-    //Convert a custom object 
-    var obj = {};
-    tinyevt(obj);
+    
     
     //define event
-    var def = obj.on('pikachu',function(){
+    var def = evt.on('pikachu',function(){
         console.log('Pica pica pica chu!');
     });
     
@@ -21,15 +19,17 @@ Convert any object in a tiny (868bytes) custom event manager.
     //detach
     def();
 
-    //define event
-    var def = obj.on('pikachu',function(){
-        console.log('Pica pica pica chu!');
+    //define dom evt
+    var def = obj(documchent.body,'click',function(){
+        console.log('Pica pica pica chu! (click)');
+        //detach
+        def();
     });
 
-    //fire event and detach all
-    obj('picachu',{who:'pikachu'},true);
+    //fire event
+    (click the screen)
     
-    obj('picachu',{who:'pikachu'}); //nothing happens
+    
 
 
 

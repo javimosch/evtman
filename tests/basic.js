@@ -1,7 +1,6 @@
 "use strict";
 
-var tinyevt = require('../lib/tinyevt');
-var evt = tinyevt({});
+var evt = require('../lib/evtman');
 
 describe("#Creating an event with 'on'", function() {
 	it("returns a function to cancel the evt binding", function() {

@@ -24,6 +24,6 @@ gulp.task('build', function () {
         .pipe(uglify())
         .on('error', gutil.log)
     .pipe(sourcemaps.write('./'))
-    .pipe(rename('tinyevt.js'))
+    .pipe(rename('evtman.js'))
     .pipe(gulp.dest('./dist'));
 });

@@ -1,14 +1,14 @@
 {
-  "name": "tinyevt",
-  "version": "1.0.7",
-  "description": "Convert any object in a tiny (868bytes) custom event manager.",
+  "name": "evtman",
+  "version": "1.0.0",
+  "description": "Implements tinyevt library and add support for dom events.",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javimosch/tinyevt.git"
+    "url": "git+https://github.com/javimosch/evtman.git"
   },
   "keywords": [
     "microjs",
@@ -21,9 +21,9 @@
   "author": "Javimosch",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/javimosch/tinyevt/issues"
+    "url": "https://github.com/javimosch/evtman/issues"
   },
-  "homepage": "https://github.com/javimosch/tinyevt#readme",
+  "homepage": "https://github.com/javimosch/evtman#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
@@ -33,7 +33,11 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
+    "tinyevt": "^1.0.8",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "tinyevt": "^1.0.8"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "eventable",
+  "name": "tinyevt",
   "version": "1.0.0",
   "description": "Convert any object in a tiny custom event manager.",
   "main": "index.js",

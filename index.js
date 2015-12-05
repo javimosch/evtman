@@ -1,3 +1,2 @@
-var eventable = require('./lib/eventable');
-eventable(top);
-module.exports = eventable;
+var tinyevt = require('./lib/tinyevt');
+module.exports = tinyevt;

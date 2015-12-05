@@ -1,34 +1,37 @@
 # tinyevt
-Convert any object in a tiny (870bytes) custom event manager.
+Convert any object in a tiny (868bytes) custom event manager.
 
 ## Usage
 
 ``` jss
     var tinyevt = require('tinyevt');
     
-    //Convert a custom object into a evt manager.
-    var myObj = {};
-    tinyevt(myObj);
+    //Convert a custom object 
+    var obj = {};
+    tinyevt(obj);
     
-    //$on: create an event (an register)
-    myObj.$on('pikachu',function(){
+    //define event
+    var def = obj.on('pikachu',function(){
         console.log('Pica pica pica chu!');
     });
     
-    //register the number you like at any moment
-    myObj.$on('pikachu',function(p){
-        console.log(p.who + 'Pica pica pica chu (again)!');
+    //fire event
+    obj('picachu',{who:'pikachu'});
+
+    //detach
+    def();
+
+    //define event
+    var def = obj.on('pikachu',function(){
+        console.log('Pica pica pica chu!');
     });
+
+    //fire event and detach all
+    obj('picachu',{who:'pikachu'},true);
     
-    //$emit: fire the event
-    myObj('picachu',{who:'pikachu'});
-    
-    //Creates and event 'hello', fire it one time and detach all listeners
-    myObj.$on('hello',function(p){
-        console.log(p+': Hello.');
-    });
-    myObj.$emit('hello','Pepe',true);
-    myObj.$emit('hello','Foo');
+    obj('picachu',{who:'pikachu'}); //nothing happens
+
+
 
 ```
 

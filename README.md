@@ -1,6 +1,10 @@
 # evtman
 tinyevt con asteroides. Implements tinyevt library and add support for dom events.
 
+## Size
+
+### 1.6kb
+
 ## Usage
 
 ``` jss

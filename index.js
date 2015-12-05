@@ -1,2 +1,2 @@
-var tinyevt = require('./lib/tinyevt');
-module.exports = tinyevt;
+var evtman = require('./lib/evtman');
+module.exports = evtman;

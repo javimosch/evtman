@@ -1,0 +1,38 @@
+{
+  "name": "eventable",
+  "version": "1.0.0",
+  "description": "Convert any object in a tiny custom event manager.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javimosch/eventable.git"
+  },
+  "keywords": [
+    "microjs",
+    "event",
+    "manager",
+    "events",
+    "evt",
+    "listeners"
+  ],
+  "author": "Javimosch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javimosch/eventable/issues"
+  },
+  "homepage": "https://github.com/javimosch/eventable#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-minify": "0.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
